@@ -1,0 +1,31 @@
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  cursor: pointer;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  padding: 0.6rem;
+  border-radius: 20px;
+}
+
+.searchBox > input {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  padding-left: 0.5rem;
+}
+
+.searchClose {
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}

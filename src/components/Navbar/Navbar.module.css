@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 2.5rem 2rem;
+  border-bottom: 2px solid white;
+}
+
+.hamburger {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.hamburger:hover {
+  opacity: 0.8;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.leftContainer > div {
+  border: 1.3px solid orangered;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5rem;
+}
+
+.points {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: orangered;
+  font-weight: bold;
+}
+
+.points > div:first-child {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid orangered;
+  padding: 0.1rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.points > div:nth-child(2) {
+  font-size: 2rem;
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.hamburgerMenu {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 3rem 2.5rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburgerMenu > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburgerMenu > nav ul {
+  list-style: none;
+  text-align: center;
+  margin-top: 45%;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.hamburgerMenu > nav ul li:hover {
+  transform: scale(1.05);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 2rem;
+}
+
+.options > div:nth-child(2) {
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  font-size: 1.3rem;
+}

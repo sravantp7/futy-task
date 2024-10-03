@@ -1,0 +1,106 @@
+.container {
+  height: 66%;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  overflow: scroll;
+  padding: 2.5rem 3rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 5rem;
+}
+
+.gameContainer {
+  height: 16rem;
+  border-top: 10px solid white;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgb(31, 30, 30);
+}
+
+.gameContainer > button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1rem;
+  width: 80%;
+  padding: 0.4rem;
+  border-radius: 10px;
+  background-color: green;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.game {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(203, 201, 201);
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.matchDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.matchDetails > div:first-child {
+  color: gray;
+  font-size: 1.3rem;
+}
+.matchDetails > div:nth-child(2) {
+  color: white;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+.matchPoint {
+  color: black;
+  background-color: white;
+  z-index: 10;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.matchScore {
+  display: flex;
+  font-size: 3rem;
+  gap: 3rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+}
