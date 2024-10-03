@@ -1,6 +1,9 @@
 import styles from "./Matches.module.css";
+
+// Context
 import { useData } from "../context/DataContext";
 
+// Icons
 import { FaAngleRight } from "react-icons/fa6";
 import { ImCoinEuro } from "react-icons/im";
 import { useEffect, useRef } from "react";
@@ -15,8 +18,6 @@ export default function Matches() {
     scroll,
     setScroll,
   } = useData();
-
-  console.log(scroll);
 
   const divRef = useRef(null);
 
@@ -33,13 +34,19 @@ export default function Matches() {
 
   if (search && search.length > 2) {
     filteredMatches = filteredMatches.filter((match) => {
-      if (match.teamA.includes(search) || match.teamB.includes(search)) {
+      if (
+        match.teamA.includes(search) ||
+        match.teamB.includes(search) ||
+        match.teamAName.toUpperCase().includes(search) ||
+        match.teamBName.toUpperCase().includes(search)
+      ) {
         return true;
       }
       return false;
     });
   }
 
+  // Scroll handle functions
   function handleScroll() {
     setScroll(true);
   }
@@ -51,6 +58,7 @@ export default function Matches() {
   }
 
   useEffect(() => {
+    // Event handlers for detecting scrolling inside match container
     if (divRef.current) {
       divRef.current.addEventListener("scroll", handleScroll);
       divRef.current.addEventListener("scrollend", handleScrollEnd);
@@ -89,13 +97,14 @@ export default function Matches() {
   );
 }
 
+// Function for formatting date in string to js Date object
 function formatDate(date) {
   const month = date.toLocaleString("default", { month: "short" });
   const day = date.getDate();
-
   return { day, month };
 }
 
+// Component for rendering upcoming match cards
 function GameCard({ match }) {
   const { teamA, teamB, teamAImg, teamBImg, date, points } = match;
 
@@ -111,7 +120,7 @@ function GameCard({ match }) {
   return (
     <div className={styles.gameContainer}>
       <div className={styles.matchPoint}>
-        <ImCoinEuro size={"2rem"} />
+        <div>F</div>
         <span>{points}</span> <FaAngleRight />
       </div>
       <div className={styles.game}>
@@ -135,6 +144,7 @@ function GameCard({ match }) {
   );
 }
 
+// Component for rendering Live and Completed match cards
 function MatchCard({ match }) {
   const {
     teamA,
@@ -160,7 +170,7 @@ function MatchCard({ match }) {
   return (
     <div className={styles.gameContainer}>
       <div className={styles.matchPoint}>
-        <ImCoinEuro size={"2rem"} />
+        <div>F</div>
         <span>{points}</span> <FaAngleRight />
       </div>
       <div className={styles.game}>

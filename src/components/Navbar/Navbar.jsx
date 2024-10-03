@@ -67,7 +67,7 @@ export default function Navbar() {
             <nav>
               <ul>
                 <li>Home</li>
-                <li>Games</li>
+                <li>Matches</li>
                 <li>About</li>
                 <li>Contact</li>
               </ul>

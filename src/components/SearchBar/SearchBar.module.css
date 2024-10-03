@@ -5,6 +5,7 @@
 
 .searchIcon {
   cursor: pointer;
+  font-weight: bold;
 }
 
 .searchBox {
