@@ -16,6 +16,9 @@ function App() {
   // State for storing the type of game that needed to display on the screen, upcoming, live or completed.
   const [select, setSelect] = useState("upcoming");
 
+  // state for detecting scroll
+  const [scroll, setScroll] = useState(false);
+
   return (
     <DataContext.Provider
       value={{
@@ -26,6 +29,8 @@ function App() {
         completedMatches,
         select,
         setSelect,
+        scroll,
+        setScroll,
       }}
     >
       <div className="App">

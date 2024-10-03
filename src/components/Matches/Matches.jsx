@@ -3,10 +3,22 @@ import { useData } from "../context/DataContext";
 
 import { FaAngleRight } from "react-icons/fa6";
 import { ImCoinEuro } from "react-icons/im";
+import { useEffect, useRef } from "react";
 
 export default function Matches() {
-  const { search, upcomingMatches, liveMatches, completedMatches, select } =
-    useData();
+  const {
+    search,
+    upcomingMatches,
+    liveMatches,
+    completedMatches,
+    select,
+    scroll,
+    setScroll,
+  } = useData();
+
+  console.log(scroll);
+
+  const divRef = useRef(null);
 
   let filteredMatches;
 
@@ -28,8 +40,35 @@ export default function Matches() {
     });
   }
 
+  function handleScroll() {
+    setScroll(true);
+  }
+
+  function handleScrollEnd() {
+    setTimeout(() => {
+      setScroll(false);
+    }, 360);
+  }
+
+  useEffect(() => {
+    if (divRef.current) {
+      divRef.current.addEventListener("scroll", handleScroll);
+      divRef.current.addEventListener("scrollend", handleScrollEnd);
+    }
+
+    return () => {
+      if (divRef.current) {
+        divRef.current.removeEventListener("scroll", handleScroll);
+        divRef.current.removeEventListener("scrollend", handleScrollEnd);
+      }
+    };
+  }, []);
+
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container} ${scroll ? styles.full : ""}`}
+      ref={divRef}
+    >
       <div className={styles.content}>
         {select === "upcoming" &&
           filteredMatches.map((match) => (

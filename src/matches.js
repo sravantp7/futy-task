@@ -84,12 +84,12 @@ export const upcomingMatches = [
 export const liveMatches = [
   {
     matchId: 100,
-    teamA: "BHA",
-    teamB: "TOT",
+    teamA: "BRE",
+    teamB: "WOL",
     teamAImg:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Brighton_and_Hove_Albion_FC_crest.svg/380px-Brighton_and_Hove_Albion_FC_crest.svg.png",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/360px-Brentford_FC_crest.svg.png",
     teamBImg:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/240px-Tottenham_Hotspur.svg.png",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/400px-Wolverhampton_Wanderers_FC_crest.svg.png",
     date: "",
     scoreA: 1,
     scoreB: 2,
@@ -101,16 +101,30 @@ export const liveMatches = [
 export const completedMatches = [
   {
     matchId: 100,
-    teamA: "BHA",
-    teamB: "TOT",
+    teamA: "TOT",
+    teamB: "ARS",
     teamAImg:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Brighton_and_Hove_Albion_FC_crest.svg/380px-Brighton_and_Hove_Albion_FC_crest.svg.png",
-    teamBImg:
       "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/240px-Tottenham_Hotspur.svg.png",
-    date: "2024-10-02T21:00:00",
-    scoreA: 3,
-    scoreB: 2,
+    teamBImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/360px-Arsenal_FC.svg.png",
+    date: "2024-09-15T21:00:00",
+    scoreA: 0,
+    scoreB: 1,
     status: "completed",
     points: 1500,
+  },
+  {
+    matchId: 101,
+    teamA: "LEI",
+    teamB: "NFO",
+    teamAImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Leicester_City_crest.svg/380px-Leicester_City_crest.svg.png",
+    teamBImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Nottingham_Forest_F.C._logo.svg/220px-Nottingham_Forest_F.C._logo.svg.png",
+    date: "2024-10-26T00:30:00",
+    scoreA: 2,
+    scoreB: 1,
+    status: "completed",
+    points: 1200,
   },
 ];

@@ -20,6 +20,11 @@
   border-radius: 10px;
   position: relative;
   background-color: rgb(31, 30, 30);
+  transition: all 0.2s;
+}
+
+.gameContainer:hover {
+  transform: scale(1.02);
 }
 
 .gameContainer > button {
@@ -36,6 +41,7 @@
   outline: none;
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .game {
@@ -95,6 +101,10 @@
   font-size: 3rem;
   gap: 3rem;
   font-weight: bold;
+}
+
+.full {
+  height: 75%;
 }
 
 @media screen and (max-width: 400px) {

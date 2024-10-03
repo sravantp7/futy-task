@@ -5,9 +5,13 @@ import { IoMdFootball } from "react-icons/io";
 import { TbScoreboard } from "react-icons/tb";
 import { RiMoneyPoundCircleLine } from "react-icons/ri";
 
+import { useData } from "../context/DataContext";
+
 export default function GameControls() {
+  const { scroll } = useData();
+
   return (
-    <div className={styles.gamecontrols}>
+    <div className={`${styles.gamecontrols} ${scroll ? styles.hide : ""}`}>
       <div>
         <FaUserAstronaut size="4rem" />
       </div>
