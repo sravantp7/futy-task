@@ -25,7 +25,7 @@ export default function SearchBar() {
         id="search"
         className={`${styles.input} ${openSearch ? styles.openSearch : ""}`}
         value={search}
-        onChange={(e) => setSearch(e.target.value.toUpperCase())}
+        onChange={(e) => setSearch(e.target.value.toUpperCase().trimStart())}
         placeholder="Search team here ..."
       />
       {openSearch ? (
