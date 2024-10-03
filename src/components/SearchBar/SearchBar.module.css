@@ -1,27 +1,30 @@
-.search {
-  display: flex;
-  align-items: center;
-}
-
-.searchIcon {
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.searchBox {
-  display: flex;
-  align-items: center;
-  border: 1px solid white;
-  padding: 0.6rem;
-  border-radius: 20px;
-}
-
-.searchBox > input {
+.input {
   border: none;
   outline: none;
+  width: 0;
+  padding: 0;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  transition: width 0.5s;
+  background-color: transparent;
   color: white;
-  background-color: black;
-  padding-left: 0.5rem;
+}
+
+.input::placeholder {
+  font-size: 1.5rem;
+}
+
+.openSearch {
+  display: block;
+  width: 60%;
+  padding: 0.7rem 1.8rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  border: 1px solid white;
+}
+
+.search {
+  cursor: pointer;
 }
 
 .searchClose {

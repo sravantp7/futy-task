@@ -18,30 +18,29 @@ export default function SearchBar() {
   }
 
   return (
-    <div className={styles.search}>
+    <>
+      <input
+        type="text"
+        name="search"
+        id="search"
+        className={`${styles.input} ${openSearch ? styles.openSearch : ""}`}
+        value={search}
+        onChange={(e) => setSearch(e.target.value.toUpperCase())}
+        placeholder="Search team here ..."
+      />
       {openSearch ? (
-        <form className={styles.searchBox} onSubmit={(e) => e.preventDefault()}>
-          <input
-            type="text"
-            name="search"
-            id="search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value.toUpperCase())}
-            placeholder="Search team here ..."
-          />
-          <IoIosClose
-            size={"2rem"}
-            onClick={toggleSearch}
-            className={styles.searchClose}
-          />
-        </form>
+        <IoIosClose
+          size={"2rem"}
+          onClick={toggleSearch}
+          className={styles.searchClose}
+        />
       ) : (
         <IoIosSearch
-          size="3rem"
+          size={"3rem"}
           onClick={toggleSearch}
-          className={styles.searchIcon}
+          className={styles.search}
         />
       )}
-    </div>
+    </>
   );
 }
