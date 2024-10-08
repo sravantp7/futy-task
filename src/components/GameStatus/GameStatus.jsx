@@ -4,7 +4,7 @@ export default function GameStatus() {
   const { select, setSelect } = useData();
 
   return (
-    <div className="status">
+    <div className={`status`}>
       <div
         className={select === "upcoming" ? "selected" : ""}
         onClick={() => setSelect("upcoming")}

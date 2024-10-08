@@ -107,16 +107,16 @@ export const upcomingMatches = [
   },
   {
     matchId: 9,
-    teamA: "BHA",
-    teamAName: "Brighton & Hove Albion",
-    teamB: "WOL",
-    teamBName: "Wolverhampton Wanderers",
+    teamA: "WOL",
+    teamAName: "Wolverhampton Wanderers",
+    teamB: "MCI",
+    teamBName: "Manchester City",
     teamAImg:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Brighton_and_Hove_Albion_FC_crest.svg/380px-Brighton_and_Hove_Albion_FC_crest.svg.png",
-    teamBImg:
       "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/400px-Wolverhampton_Wanderers_FC_crest.svg.png",
-    date: "2024-10-26T19:30:00",
-    points: 1400,
+    teamBImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/380px-Manchester_City_FC_badge.svg.png",
+    date: "2024-10-20T18:30:00",
+    points: 1300,
   },
   {
     matchId: 10,
@@ -135,27 +135,27 @@ export const upcomingMatches = [
     matchId: 11,
     teamA: "BHA",
     teamAName: "Brighton & Hove Albion",
-    teamB: "WOL",
-    teamBName: "Wolverhampton Wanderers",
+    teamB: "TOT",
+    teamBName: "Tottenham Hotspur",
     teamAImg:
       "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Brighton_and_Hove_Albion_FC_crest.svg/380px-Brighton_and_Hove_Albion_FC_crest.svg.png",
     teamBImg:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/400px-Wolverhampton_Wanderers_FC_crest.svg.png",
-    date: "2024-10-26T19:30:00",
-    points: 1400,
+      "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/240px-Tottenham_Hotspur.svg.png",
+    date: "2024-10-06T21:00:00",
+    points: 1500,
   },
   {
     matchId: 12,
-    teamA: "BHA",
-    teamAName: "Brighton & Hove Albion",
-    teamB: "WOL",
-    teamBName: "Wolverhampton Wanderers",
+    teamA: "WOL",
+    teamAName: "Wolverhampton Wanderers",
+    teamB: "MCI",
+    teamBName: "Manchester City",
     teamAImg:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Brighton_and_Hove_Albion_FC_crest.svg/380px-Brighton_and_Hove_Albion_FC_crest.svg.png",
-    teamBImg:
       "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/400px-Wolverhampton_Wanderers_FC_crest.svg.png",
-    date: "2024-10-26T19:30:00",
-    points: 1400,
+    teamBImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/380px-Manchester_City_FC_badge.svg.png",
+    date: "2024-10-20T18:30:00",
+    points: 1300,
   },
 ];
 

@@ -1,4 +1,4 @@
-.input {
+/* .input {
   border: none;
   outline: none;
   width: 0;
@@ -33,4 +33,36 @@
   background-color: white;
   border-radius: 50%;
   cursor: pointer;
+} */
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+  opacity: 1;
+  border: 1px solid white;
+  transition: all 0.4s;
+  border-radius: 50px;
+}
+
+.searchContainer > input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 16px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.hide {
+  opacity: 0;
+  width: 0;
+  /* transform: translateX(200%); */
 }

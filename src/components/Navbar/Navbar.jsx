@@ -9,15 +9,14 @@ import { RiCustomerService2Line } from "react-icons/ri";
 import Logo from "../Logo/Logo";
 import SearchBar from "../SearchBar/SearchBar";
 
-import { motion } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
-
 // Sound
 import clickSound from "../../sounds/button.wav";
+import { useData } from "../context/DataContext";
 
 export default function Navbar() {
   // State for toggling the hamburger menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { scroll } = useData();
 
   function toggleMenu() {
     // Playing sound effect when clicking the hamburger menu
@@ -30,7 +29,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header}`}>
       {/* Leftside of the navigationbar */}
       <div className={styles.leftContainer}>
         <FaUserCircle size="3.5rem" />
@@ -74,40 +73,6 @@ export default function Navbar() {
           <div>How to play</div>
         </div>
       </div>
-
-      {/* Hamburger Menu */}
-      {/* <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ ease: "easeOut", duration: 0.3 }}
-            className={styles.hamburgerMenu}
-          >
-            <div>
-              <Logo />
-              <div onClick={toggleMenu} className={styles.hamburger}>
-                <IoMdClose size="4rem" />
-              </div>
-            </div>
-            <nav>
-              <ul>
-                <li>Home</li>
-                <li>Matches</li>
-                <li>About</li>
-                <li>Contact</li>
-              </ul>
-            </nav>
-            <div className={styles.options}>
-              <div>
-                <RiCustomerService2Line size={"3rem"} />
-              </div>
-              <div>How to play</div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence> */}
     </header>
   );
 }

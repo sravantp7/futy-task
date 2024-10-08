@@ -1,4 +1,6 @@
 .header {
+  opacity: 1;
+  transition: all 0.4s;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,9 +8,15 @@
   border-bottom: 2px solid white;
 }
 
+.hide--header {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
 .hamburger {
   cursor: pointer;
   transition: all 0.5s;
+  margin-left: 1rem;
 }
 
 .hamburger:hover {
@@ -55,9 +63,9 @@
 .rightContainer {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
   width: 100%;
   justify-content: flex-end;
+  margin-left: 0.8rem;
 }
 
 .hamburgerMenu {
@@ -73,12 +81,12 @@
   display: flex;
   flex-direction: column;
   opacity: 1;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .hamburgerMenu--hide {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(120%);
 }
 
 .hamburgerMenu > div:nth-child(1) {
@@ -90,7 +98,8 @@
 .hamburgerMenu > nav ul {
   list-style: none;
   text-align: center;
-  margin-top: 45%;
+  margin-top: 50%;
+  transform: translateY(-40%);
   font-size: 3rem;
   display: flex;
   flex-direction: column;
@@ -118,4 +127,16 @@
   padding: 1rem 2rem;
   border-radius: 20px;
   font-size: 1.3rem;
+}
+
+.headerMini {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 2.5rem 2rem;
+  border-bottom: 2px solid white;
 }
