@@ -48,8 +48,35 @@ export default function Navbar() {
         </div>
       </div>
 
+      <div
+        className={`${styles.hamburgerMenu} ${
+          isMenuOpen ? "" : styles["hamburgerMenu--hide"]
+        }`}
+      >
+        <div>
+          <Logo />
+          <div onClick={toggleMenu} className={styles.hamburger}>
+            <IoMdClose size="4rem" />
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Matches</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <div className={styles.options}>
+          <div>
+            <RiCustomerService2Line size={"3rem"} />
+          </div>
+          <div>How to play</div>
+        </div>
+      </div>
+
       {/* Hamburger Menu */}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0 }}
@@ -80,7 +107,7 @@ export default function Navbar() {
             </div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </header>
   );
 }

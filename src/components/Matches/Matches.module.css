@@ -23,9 +23,9 @@
   transition: all 0.2s;
 }
 
-.gameContainer:hover {
+/* .gameContainer:hover {
   transform: scale(1.02);
-}
+} */
 
 .gameContainer > button {
   position: absolute;

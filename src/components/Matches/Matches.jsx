@@ -5,7 +5,6 @@ import { useData } from "../context/DataContext";
 
 // Icons
 import { FaAngleRight } from "react-icons/fa6";
-import { ImCoinEuro } from "react-icons/im";
 import { useEffect, useRef } from "react";
 
 export default function Matches() {
@@ -52,9 +51,7 @@ export default function Matches() {
   }
 
   function handleScrollEnd() {
-    setTimeout(() => {
-      setScroll(false);
-    }, 360);
+    setScroll(false);
   }
 
   useEffect(() => {

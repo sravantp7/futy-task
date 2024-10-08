@@ -92,6 +92,71 @@ export const upcomingMatches = [
     date: "2024-10-26T19:30:00",
     points: 1400,
   },
+  {
+    matchId: 8,
+    teamA: "BHA",
+    teamAName: "Brighton & Hove Albion",
+    teamB: "WOL",
+    teamBName: "Wolverhampton Wanderers",
+    teamAImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Brighton_and_Hove_Albion_FC_crest.svg/380px-Brighton_and_Hove_Albion_FC_crest.svg.png",
+    teamBImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/400px-Wolverhampton_Wanderers_FC_crest.svg.png",
+    date: "2024-10-26T19:30:00",
+    points: 1400,
+  },
+  {
+    matchId: 9,
+    teamA: "BHA",
+    teamAName: "Brighton & Hove Albion",
+    teamB: "WOL",
+    teamBName: "Wolverhampton Wanderers",
+    teamAImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Brighton_and_Hove_Albion_FC_crest.svg/380px-Brighton_and_Hove_Albion_FC_crest.svg.png",
+    teamBImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/400px-Wolverhampton_Wanderers_FC_crest.svg.png",
+    date: "2024-10-26T19:30:00",
+    points: 1400,
+  },
+  {
+    matchId: 10,
+    teamA: "BHA",
+    teamAName: "Brighton & Hove Albion",
+    teamB: "WOL",
+    teamBName: "Wolverhampton Wanderers",
+    teamAImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Brighton_and_Hove_Albion_FC_crest.svg/380px-Brighton_and_Hove_Albion_FC_crest.svg.png",
+    teamBImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/400px-Wolverhampton_Wanderers_FC_crest.svg.png",
+    date: "2024-10-26T19:30:00",
+    points: 1400,
+  },
+  {
+    matchId: 11,
+    teamA: "BHA",
+    teamAName: "Brighton & Hove Albion",
+    teamB: "WOL",
+    teamBName: "Wolverhampton Wanderers",
+    teamAImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Brighton_and_Hove_Albion_FC_crest.svg/380px-Brighton_and_Hove_Albion_FC_crest.svg.png",
+    teamBImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/400px-Wolverhampton_Wanderers_FC_crest.svg.png",
+    date: "2024-10-26T19:30:00",
+    points: 1400,
+  },
+  {
+    matchId: 12,
+    teamA: "BHA",
+    teamAName: "Brighton & Hove Albion",
+    teamB: "WOL",
+    teamBName: "Wolverhampton Wanderers",
+    teamAImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Brighton_and_Hove_Albion_FC_crest.svg/380px-Brighton_and_Hove_Albion_FC_crest.svg.png",
+    teamBImg:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Wolverhampton_Wanderers_FC_crest.svg/400px-Wolverhampton_Wanderers_FC_crest.svg.png",
+    date: "2024-10-26T19:30:00",
+    points: 1400,
+  },
 ];
 
 // Live matches data usually coming from a database
